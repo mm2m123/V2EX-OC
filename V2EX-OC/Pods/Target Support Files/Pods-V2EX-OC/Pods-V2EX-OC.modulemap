@@ -1,0 +1,6 @@
+framework module Pods_V2EX_OC {
+  umbrella header "Pods-V2EX-OC-umbrella.h"
+
+  export *
+  module * { export * }
+}
