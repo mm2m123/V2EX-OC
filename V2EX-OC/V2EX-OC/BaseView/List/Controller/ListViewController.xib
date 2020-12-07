@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController">
             <connections>
+                <outlet property="tableView" destination="tOp-F6-IbW" id="9pI-Z9-uOd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +19,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tOp-F6-IbW">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tOp-F6-IbW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="31I-km-Mql"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="tOp-F6-IbW" secondAttribute="trailing" id="HGM-JW-6RH"/>
+                <constraint firstItem="tOp-F6-IbW" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="N8s-hW-R0v"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="tOp-F6-IbW" secondAttribute="bottom" id="tXM-iE-NsO"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="110"/>
         </view>
     </objects>
